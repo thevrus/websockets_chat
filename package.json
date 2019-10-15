@@ -1,0 +1,16 @@
+{
+  "name": "websockets",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "npm run server | npm run client",
+    "server": "node app/server.js",
+    "client": "cd app && python -m SimpleHTTPServer $PORT"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ws": "^7.1.2"
+  }
+}

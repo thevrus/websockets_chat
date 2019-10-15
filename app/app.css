@@ -1,0 +1,66 @@
+:root {
+    --black: #1d1d1d;
+}
+
+body {
+    background-color: black;
+    color: #0F0;
+    font-family: monospace;
+    background-color: var(--black);
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: .25em;
+    font-family: sans-serif;
+}
+
+#status {
+    font-size: .8em;
+}
+
+#messages {
+    margin-left: 1em;
+    list-style: none;
+}
+
+#form {
+    display: flex;
+}
+
+input,
+label {
+    display: block;
+}
+
+input {
+    outline: none;
+    border: none;
+    background-color: var(--black);
+    color: #0F0;
+    padding: 1em .5em;
+    display: block;
+    font-size: 1.5em;
+    font-family: 'Consolas', monospace;
+    flex: 1;
+}
+
+label {
+    display: block;
+    padding: 1.25em .25em;
+    font-size: 2em;
+    animation: fade infinite 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
